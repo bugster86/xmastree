@@ -44,7 +44,7 @@ goto(p1-20,p2+16)
 showturtle()
 color('red','red')
 pendown()
-title("BUON NATALE.....TOVARISH!")
+
 speed(5)
 begin_fill()
 color('red','red')
