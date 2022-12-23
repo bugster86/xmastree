@@ -1,5 +1,6 @@
 from turtle import *
 
+bgcolor("black")
 hideturtle()
 title("BUON NATALE.....")
 color('green','green')
@@ -12,7 +13,10 @@ right(30)
 
 for i in range (0,20):
     forward(50)
+
+    #circle(10)
     right(150)
+    #circle(10)
     forward(30)
     left(150)
 
@@ -20,6 +24,8 @@ right(150)
 
 p1=xcor()
 p2=ycor()
+
+
 goto(-p1-30,p2)
 
 for i in range (0,19):
@@ -56,5 +62,6 @@ for k in range(5):
 hideturtle()
 end_fill()
 
-
+ts= getscreen()
+ts.getcanvas().postscript(file="tree.eps")
 done()
